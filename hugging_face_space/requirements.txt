@@ -1,0 +1,6 @@
+hopsworks
+scikit-learn
+numpy
+joblib
+xgboost==0.90
+optuna
