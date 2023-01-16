@@ -21,7 +21,7 @@ weekly_data = get_weather_data_weekly(city, today)
 # get Hopsworks Model Registry
 mr = project.get_model_registry()
 # get model object
-model = mr.get_model("aqi_ensemble", version=1)
+model = mr.get_model("aqi_ensemble", version=2)
 model_dir = model.download()
 model = joblib.load(model_dir + "/model.pkl")
 
